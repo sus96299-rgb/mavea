@@ -1,0 +1,22 @@
+{
+  "name": "生活方式种草视频",
+  "scenario": "ecommerce_promo",
+  "description": "生活化场景种草，节奏舒缓，以使用场景和情感共鸣为主，适合小红书",
+  "target_duration": 45,
+  "structure": [
+    {"segment": "scene_set", "duration_ratio": 0.15, "shot_type": "美好生活场景", "description": "营造向往的生活氛围"},
+    {"segment": "daily_use", "duration_ratio": 0.35, "shot_type": "日常使用场景", "description": "产品自然融入日常生活"},
+    {"segment": "detail_show", "duration_ratio": 0.25, "shot_type": "产品细节特写", "description": "展示产品质感和设计细节"},
+    {"segment": "feeling", "duration_ratio": 0.15, "shot_type": "使用后的满足感", "description": "情感升华，表达使用感受"},
+    {"segment": "soft_cta", "duration_ratio": 0.1, "shot_type": "产品+品牌", "description": "软性引导，不硬销"}
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": ["dissolve", "fade", "cut"],
+    "subtitle_style": {"font_size": 36, "position": "bottom", "color": "white", "stroke_color": "black", "stroke_width": 2},
+    "bgm_style": "warm_acoustic",
+    "bgm_volume": 0.15,
+    "pacing": "slow",
+    "text_overlay_frequency": "low"
+  }
+}

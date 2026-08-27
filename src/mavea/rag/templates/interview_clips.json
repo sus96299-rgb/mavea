@@ -1,0 +1,45 @@
+{
+  "name": "访谈金句",
+  "scenario": "interview",
+  "description": "人物访谈金句切片，突出观点",
+  "target_duration": 45,
+  "structure": [
+    {
+      "segment": "金句开场",
+      "duration_ratio": 0.15,
+      "shot_type": "最有力一句",
+      "description": "最有力一句"
+    },
+    {
+      "segment": "展开",
+      "duration_ratio": 0.6,
+      "shot_type": "背景故事",
+      "description": "背景故事"
+    },
+    {
+      "segment": "升华",
+      "duration_ratio": 0.25,
+      "shot_type": "观点收尾",
+      "description": "观点收尾"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "ambient",
+    "bgm_volume": 0.12,
+    "pacing": "slow",
+    "keep_natural_audio": true,
+    "text_overlay_frequency": "low"
+  }
+}

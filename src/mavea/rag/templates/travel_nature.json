@@ -1,0 +1,51 @@
+{
+  "name": "自然风光大片",
+  "scenario": "nature",
+  "description": "山川湖海航拍风光，大气舒缓，适合治愈系",
+  "target_duration": 60,
+  "structure": [
+    {
+      "segment": "开场",
+      "duration_ratio": 0.12,
+      "shot_type": "大远景定场",
+      "description": "大远景定场"
+    },
+    {
+      "segment": "铺陈",
+      "duration_ratio": 0.3,
+      "shot_type": "分层次展示风光",
+      "description": "分层次展示风光"
+    },
+    {
+      "segment": "高潮",
+      "duration_ratio": 0.33,
+      "shot_type": "最壮观镜头",
+      "description": "最壮观镜头"
+    },
+    {
+      "segment": "收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "留白渐隐",
+      "description": "留白渐隐"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "epic",
+    "bgm_volume": 0.12,
+    "pacing": "slow",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

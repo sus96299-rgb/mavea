@@ -1,0 +1,22 @@
+{
+  "name": "快节奏带货短视频",
+  "scenario": "ecommerce_promo",
+  "description": "快节奏电商带货，3秒抓眼球，痛点-方案-CTA结构，适合抖音/快手",
+  "target_duration": 30,
+  "structure": [
+    {"segment": "hook", "duration_ratio": 0.1, "shot_type": "产品特写或使用效果冲击画面", "description": "前3秒必须抓住注意力，展示最吸引人的效果或痛点"},
+    {"segment": "pain_point", "duration_ratio": 0.2, "shot_type": "问题场景", "description": "展示用户痛点，引发共鸣"},
+    {"segment": "solution", "duration_ratio": 0.4, "shot_type": "产品使用+效果展示", "description": "产品作为解决方案，展示使用过程和效果"},
+    {"segment": "social_proof", "duration_ratio": 0.15, "shot_type": "对比图/用户反馈/销量数据", "description": "社会认同，增强信任"},
+    {"segment": "cta", "duration_ratio": 0.15, "shot_type": "产品+价格+购买引导", "description": "行动号召，限时优惠或明确指引"}
+  ],
+  "editing_params": {
+    "avg_shot_duration": 1.5,
+    "transition_preference": ["cut", "zoom"],
+    "subtitle_style": {"font_size": 48, "position": "center", "color": "white", "stroke_color": "black", "stroke_width": 3},
+    "bgm_style": "upbeat_electronic",
+    "bgm_volume": 0.12,
+    "pacing": "fast",
+    "text_overlay_frequency": "high"
+  }
+}

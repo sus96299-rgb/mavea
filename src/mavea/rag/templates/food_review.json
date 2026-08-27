@@ -1,0 +1,22 @@
+{
+  "name": "美食探店",
+  "scenario": "vlog_highlight",
+  "description": "美食探店/制作，诱人画面+真实反应，节奏轻快",
+  "target_duration": 45,
+  "structure": [
+    {"segment": "arrival", "duration_ratio": 0.1, "shot_type": "店铺外观/招牌", "description": "到达和第一印象"},
+    {"segment": "food_porn", "duration_ratio": 0.4, "shot_type": "食物特写（慢镜头/微距）", "description": "最诱人的食物画面，多角度"},
+    {"segment": "reaction", "duration_ratio": 0.3, "shot_type": "品尝反应+评价", "description": "真实的第一口反应和评价"},
+    {"segment": "recommend", "duration_ratio": 0.2, "shot_type": "推荐菜品+价格+地址", "description": "总结推荐信息"}
+  ],
+  "editing_params": {
+    "avg_shot_duration": 2.0,
+    "transition_preference": ["cut", "zoom", "dissolve"],
+    "subtitle_style": {"font_size": 40, "position": "bottom", "color": "white", "stroke_color": "black", "stroke_width": 2},
+    "bgm_style": "jazzy_upbeat",
+    "bgm_volume": 0.1,
+    "pacing": "medium",
+    "keep_natural_audio": true,
+    "text_overlay_frequency": "medium"
+  }
+}

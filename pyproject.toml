@@ -1,0 +1,128 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mavea"
+version = "0.1.0"
+description = "Multi-Agent Video Editing Assistant — 多Agent智能视频剪辑助手"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10,<3.14"
+authors = [{ name = "MAVEA Contributors" }]
+keywords = ["agent", "mcp", "video-editing", "langgraph", "rag", "ffmpeg", "llm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Video",
+]
+
+dependencies = [
+    # ---- MCP & Agent ----
+    "mcp[cli]>=2.1.0,<3.0.0",
+    "langgraph>=1.2.0,<2.0.0",
+
+    # ---- LLM ----
+    "openai>=1.50.0,<2.0.0",       # DeepSeek / Qwen / OpenAI 均使用 OpenAI 兼容接口
+
+    # ---- Web ----
+    "fastapi>=0.141.0,<1.0.0",
+    "uvicorn[standard]>=0.30.0,<1.0.0",
+    "gradio>=6.0.0,<7.0.0",
+
+    # ---- 数据模型与配置 ----
+    "pydantic>=2.10.0,<3.0.0",
+    "pydantic-settings>=2.5.0,<3.0.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+
+    # ---- HTTP 客户端 ----
+    "httpx>=0.28.0,<1.0.0",
+
+    # ---- 日志 ----
+    "structlog>=24.0.0,<27.0.0",
+
+    # ---- 视频处理 ----
+    "numpy>=1.26.0,<3.0.0",        # 3.10→2.1.x, 3.13→2.5.x，pip自动解析
+    "opencv-python-headless>=4.10.0,<6.0.0",  # 5.x使用cp37-abi3，兼容3.13
+    "scenedetect>=0.7.0,<0.8.0",
+    "scikit-image>=0.24.0,<1.0.0",  # 3.10→0.25.x, 3.13→0.26.x
+    "srt>=3.5.0,<4.0.0",
+
+    # ---- 音频 ----
+    "faster-whisper>=1.2.0,<2.0.0",
+    "edge-tts>=7.0.0,<8.0.0",
+
+    # ---- RAG ----
+    "chromadb>=1.5.0,<2.0.0",
+    "sentence-transformers>=3.0.0,<7.0.0",
+    "FlagEmbedding>=1.4.0,<2.0.0",
+    "rank-bm25>=0.2.2,<0.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0,<10.0.0",
+    "pytest-asyncio>=0.24.0,<1.0.0",
+    "ruff>=0.5.0,<1.0.0",
+    "pre-commit>=4.0.0,<5.0.0",
+]
+
+[project.scripts]
+mavea = "mavea.cli:main"
+mavea-mcp = "mavea.mcp.server:main"
+mavea-web = "mavea.web.gradio_app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mavea = ["rag/templates/*.json"]
+
+# ==================== Ruff ====================
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E", "F", "W",   # pycodestyle / pyflakes
+    "I",             # isort
+    "N",             # pep8-naming
+    "UP",            # pyupgrade
+    "B",             # flake8-bugbear
+    "SIM",           # flake8-simplify
+]
+ignore = ["E501"]  # 行长由 formatter 管
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011"]
+# FastAPI 依赖注入要求 File(...) 写在参数默认值，是框架惯例而非可变默认值陷阱
+"src/mavea/api/routes.py" = ["B008"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+# ==================== Pytest ====================
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_mode = "auto"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: requires external services (API keys, ffmpeg, etc.)",
+]
+
+# ==================== Coverage ====================
+[tool.coverage.run]
+source = ["src/mavea"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = ["pragma: no cover", "raise NotImplementedError", "if __name__"]
+fail_under = 50

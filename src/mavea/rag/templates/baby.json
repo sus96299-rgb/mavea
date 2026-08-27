@@ -1,0 +1,45 @@
+{
+  "name": "宝宝成长记录",
+  "scenario": "family",
+  "description": "婴幼儿成长记录，温馨柔和，节奏慢",
+  "target_duration": 45,
+  "structure": [
+    {
+      "segment": "醒来",
+      "duration_ratio": 0.15,
+      "shot_type": "笑脸特写",
+      "description": "笑脸特写"
+    },
+    {
+      "segment": "日常",
+      "duration_ratio": 0.6,
+      "shot_type": "玩耍/学步",
+      "description": "玩耍/学步"
+    },
+    {
+      "segment": "温情收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "亲子互动",
+      "description": "亲子互动"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "calm",
+    "bgm_volume": 0.12,
+    "pacing": "slow",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

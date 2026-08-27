@@ -1,0 +1,51 @@
+{
+  "name": "房产看房",
+  "scenario": "realestate",
+  "description": "房源带看，空间动线清晰",
+  "target_duration": 60,
+  "structure": [
+    {
+      "segment": "门头/客厅",
+      "duration_ratio": 0.12,
+      "shot_type": "整体印象",
+      "description": "整体印象"
+    },
+    {
+      "segment": "功能区",
+      "duration_ratio": 0.3,
+      "shot_type": "卧室/厨房",
+      "description": "卧室/厨房"
+    },
+    {
+      "segment": "亮点",
+      "duration_ratio": 0.33,
+      "shot_type": "采光/视野",
+      "description": "采光/视野"
+    },
+    {
+      "segment": "收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "联系方式",
+      "description": "联系方式"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "ambient",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

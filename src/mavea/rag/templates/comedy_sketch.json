@@ -1,0 +1,45 @@
+{
+  "name": "搞笑段子",
+  "scenario": "comedy",
+  "description": "搞笑短剧/梗，强反差节奏",
+  "target_duration": 30,
+  "structure": [
+    {
+      "segment": "铺垫",
+      "duration_ratio": 0.15,
+      "shot_type": "正常情境",
+      "description": "正常情境"
+    },
+    {
+      "segment": "转折",
+      "duration_ratio": 0.6,
+      "shot_type": "反差",
+      "description": "反差"
+    },
+    {
+      "segment": "包袱",
+      "duration_ratio": 0.25,
+      "shot_type": "笑点定格",
+      "description": "笑点定格"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "upbeat",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

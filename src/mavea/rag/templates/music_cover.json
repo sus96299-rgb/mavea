@@ -1,0 +1,51 @@
+{
+  "name": "音乐/MV",
+  "scenario": "music",
+  "description": "演唱演奏或 MV 片段，卡节拍",
+  "target_duration": 60,
+  "structure": [
+    {
+      "segment": "前奏",
+      "duration_ratio": 0.12,
+      "shot_type": "氛围空镜",
+      "description": "氛围空镜"
+    },
+    {
+      "segment": "主歌",
+      "duration_ratio": 0.3,
+      "shot_type": "人物演唱",
+      "description": "人物演唱"
+    },
+    {
+      "segment": "副歌高潮",
+      "duration_ratio": 0.33,
+      "shot_type": "多机位",
+      "description": "多机位"
+    },
+    {
+      "segment": "尾奏",
+      "duration_ratio": 0.25,
+      "shot_type": "定格",
+      "description": "定格"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "upbeat",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

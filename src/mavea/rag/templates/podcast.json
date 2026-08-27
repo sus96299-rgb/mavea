@@ -1,0 +1,45 @@
+{
+  "name": "播客切片",
+  "scenario": "podcast",
+  "description": "播客/对谈精彩切片，字幕强化",
+  "target_duration": 45,
+  "structure": [
+    {
+      "segment": "观点",
+      "duration_ratio": 0.15,
+      "shot_type": "抛话题",
+      "description": "抛话题"
+    },
+    {
+      "segment": "交锋",
+      "duration_ratio": 0.6,
+      "shot_type": "你来我往",
+      "description": "你来我往"
+    },
+    {
+      "segment": "结论",
+      "duration_ratio": 0.25,
+      "shot_type": "共识",
+      "description": "共识"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "ambient",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": true,
+    "text_overlay_frequency": "low"
+  }
+}

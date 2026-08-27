@@ -1,0 +1,45 @@
+{
+  "name": "生日庆祝",
+  "scenario": "party",
+  "description": "生日派对记录，欢乐热闹",
+  "target_duration": 30,
+  "structure": [
+    {
+      "segment": "准备",
+      "duration_ratio": 0.15,
+      "shot_type": "蛋糕/布置",
+      "description": "蛋糕/布置"
+    },
+    {
+      "segment": "高潮",
+      "duration_ratio": 0.6,
+      "shot_type": "吹蜡烛许愿",
+      "description": "吹蜡烛许愿"
+    },
+    {
+      "segment": "收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "欢笑合影",
+      "description": "欢笑合影"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "upbeat",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

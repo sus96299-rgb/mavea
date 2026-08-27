@@ -1,0 +1,45 @@
+{
+  "name": "伤感怀念/情感",
+  "scenario": "emotional",
+  "description": "怀旧伤感情感向，慢节奏，字幕戳心",
+  "target_duration": 15,
+  "structure": [
+    {
+      "segment": "回忆钩子",
+      "duration_ratio": 0.15,
+      "shot_type": "老照片缓推",
+      "description": "老照片缓推"
+    },
+    {
+      "segment": "铺陈",
+      "duration_ratio": 0.6,
+      "shot_type": "多张照片依次",
+      "description": "多张照片依次"
+    },
+    {
+      "segment": "收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "点题文案留白",
+      "description": "点题文案留白"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "calm",
+    "bgm_volume": 0.12,
+    "pacing": "slow",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

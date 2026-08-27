@@ -1,0 +1,44 @@
+{
+  "name": "直播带货切片",
+  "scenario": "ecommerce",
+  "description": "直播带货高能切片，逼单感强",
+  "target_duration": 30,
+  "structure": [
+    {
+      "segment": "痛点",
+      "duration_ratio": 0.15,
+      "shot_type": "用户困扰",
+      "description": "用户困扰"
+    },
+    {
+      "segment": "卖点",
+      "duration_ratio": 0.6,
+      "shot_type": "产品效果",
+      "description": "产品效果"
+    },
+    {
+      "segment": "逼单",
+      "duration_ratio": 0.25,
+      "shot_type": "价格机制+催促",
+      "description": "价格机制+催促"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 1.8,
+    "transition_preference": [
+      "cut"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "upbeat",
+    "bgm_volume": 0.12,
+    "pacing": "fast",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

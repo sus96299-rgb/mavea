@@ -1,0 +1,45 @@
+{
+  "name": "家居改造/DIY",
+  "scenario": "home",
+  "description": "家居整理/手工 DIY，过程清晰",
+  "target_duration": 60,
+  "structure": [
+    {
+      "segment": "改造前",
+      "duration_ratio": 0.15,
+      "shot_type": "原状",
+      "description": "原状"
+    },
+    {
+      "segment": "过程",
+      "duration_ratio": 0.6,
+      "shot_type": "步骤快放",
+      "description": "步骤快放"
+    },
+    {
+      "segment": "改造后",
+      "duration_ratio": 0.25,
+      "shot_type": "对比揭晓",
+      "description": "对比揭晓"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "ambient",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

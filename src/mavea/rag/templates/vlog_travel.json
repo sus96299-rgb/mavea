@@ -1,0 +1,22 @@
+{
+  "name": "旅行Vlog",
+  "scenario": "vlog_highlight",
+  "description": "旅行记录，风景+人文+美食，节奏明快，适合B站/YouTube",
+  "target_duration": 90,
+  "structure": [
+    {"segment": "destination", "duration_ratio": 0.1, "shot_type": "目的地标志性画面", "description": "展示目的地最美的画面"},
+    {"segment": "journey", "duration_ratio": 0.3, "shot_type": "路途+到达", "description": "出发和路途的期待感"},
+    {"segment": "explore", "duration_ratio": 0.35, "shot_type": "景点+美食+人文", "description": "探索过程，多角度展示"},
+    {"segment": "memorable", "duration_ratio": 0.15, "shot_type": "最难忘的瞬间", "description": "情感高潮"},
+    {"segment": "wrap_up", "duration_ratio": 0.1, "shot_type": "回顾+结尾", "description": "总结感受"}
+  ],
+  "editing_params": {
+    "avg_shot_duration": 2.5,
+    "transition_preference": ["dissolve", "wipe", "cut"],
+    "subtitle_style": {"font_size": 36, "position": "bottom", "color": "white", "stroke_color": "black", "stroke_width": 2},
+    "bgm_style": "uplifting_indie",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "text_overlay_frequency": "medium"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "穿搭/OOTD",
+  "scenario": "fashion",
+  "description": "穿搭变装与街拍，时尚利落，重构图与转场",
+  "target_duration": 20,
+  "structure": [
+    {
+      "segment": "变装前",
+      "duration_ratio": 0.15,
+      "shot_type": "日常造型",
+      "description": "日常造型"
+    },
+    {
+      "segment": "切换",
+      "duration_ratio": 0.6,
+      "shot_type": "卡点换装",
+      "description": "卡点换装"
+    },
+    {
+      "segment": "成片",
+      "duration_ratio": 0.25,
+      "shot_type": "多机位展示",
+      "description": "多机位展示"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "upbeat",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

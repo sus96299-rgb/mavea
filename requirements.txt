@@ -1,0 +1,43 @@
+# MAVEA 核心依赖
+# 安装方式：pip install -e ".[dev]"
+# 本文件仅作依赖清单参考，版本约束以 pyproject.toml 为准
+
+# ---- MCP & Agent ----
+mcp[cli]>=2.1.0,<3.0.0
+langgraph>=1.2.0,<2.0.0
+
+# ---- LLM ----
+openai>=1.50.0,<2.0.0
+
+# ---- Web ----
+fastapi>=0.141.0,<1.0.0
+uvicorn[standard]>=0.30.0,<1.0.0
+gradio>=6.0.0,<7.0.0
+
+# ---- 数据模型与配置 ----
+pydantic>=2.10.0,<3.0.0
+pydantic-settings>=2.5.0,<3.0.0
+python-dotenv>=1.0.0,<2.0.0
+
+# ---- HTTP ----
+httpx>=0.28.0,<1.0.0
+
+# ---- 日志 ----
+structlog>=24.0.0,<27.0.0
+
+# ---- 视频处理 ----
+numpy>=1.26.0,<3.0.0
+opencv-python-headless>=4.10.0,<6.0.0
+scenedetect>=0.7.0,<0.8.0
+scikit-image>=0.24.0,<1.0.0
+srt>=3.5.0,<4.0.0
+
+# ---- 音频 ----
+faster-whisper>=1.2.0,<2.0.0
+edge-tts>=7.0.0,<8.0.0
+
+# ---- RAG ----
+chromadb>=1.5.0,<2.0.0
+sentence-transformers>=3.0.0,<7.0.0
+FlagEmbedding>=1.4.0,<2.0.0
+rank-bm25>=0.2.2,<0.3.0

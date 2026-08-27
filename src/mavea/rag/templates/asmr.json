@@ -1,0 +1,45 @@
+{
+  "name": "ASMR/治愈",
+  "scenario": "asmr",
+  "description": "ASMR 声音向，画面极简极静",
+  "target_duration": 20,
+  "structure": [
+    {
+      "segment": "特写",
+      "duration_ratio": 0.15,
+      "shot_type": "物体细节",
+      "description": "物体细节"
+    },
+    {
+      "segment": "过程",
+      "duration_ratio": 0.6,
+      "shot_type": "慢动作声音",
+      "description": "慢动作声音"
+    },
+    {
+      "segment": "收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "留白",
+      "description": "留白"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "ambient",
+    "bgm_volume": 0.12,
+    "pacing": "slow",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

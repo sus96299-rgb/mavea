@@ -1,0 +1,42 @@
+services:
+  mavea:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mavea:latest
+    container_name: mavea
+    ports:
+      - "7860:7860"   # Gradio WebUI
+      - "8765:8765"   # MCP SSE Server
+    volumes:
+      # 工作区：输入素材和输出成片
+      - ./workspace:/app/workspace
+      # 向量数据库持久化
+      - ./data:/app/data
+    env_file:
+      - .env
+    environment:
+      - MAVEA_WORKSPACE_DIR=/app/workspace
+      - MAVEA_GRADIO_HOST=0.0.0.0
+      - MAVEA_MCP_SSE_HOST=0.0.0.0
+    restart: unless-stopped
+
+  # 单独启动 MCP Server（stdio 模式不需要，此服务用于远程 SSE 调用）
+  mavea-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mavea:latest
+    container_name: mavea-mcp
+    command: ["mavea-mcp", "--transport", "sse", "--host", "0.0.0.0", "--port", "8765"]
+    ports:
+      - "8765:8765"
+    volumes:
+      - ./workspace:/app/workspace
+    env_file:
+      - .env
+    environment:
+      - MAVEA_WORKSPACE_DIR=/app/workspace
+    restart: unless-stopped
+    profiles:
+      - mcp

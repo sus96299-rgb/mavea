@@ -1,0 +1,22 @@
+{
+  "name": "教程/知识讲解",
+  "scenario": "tutorial",
+  "description": "步骤清晰的教程视频，重点信息用字幕强调，节奏稳定",
+  "target_duration": 60,
+  "structure": [
+    {"segment": "intro", "duration_ratio": 0.1, "shot_type": "成品展示或问题引入", "description": "展示最终效果或提出问题"},
+    {"segment": "steps", "duration_ratio": 0.7, "shot_type": "操作步骤特写", "description": "按步骤展示，每步有字幕说明"},
+    {"segment": "tips", "duration_ratio": 0.1, "shot_type": "注意事项/技巧", "description": "补充关键技巧"},
+    {"segment": "result", "duration_ratio": 0.1, "shot_type": "最终成果", "description": "展示完成效果"}
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": ["cut", "fade"],
+    "subtitle_style": {"font_size": 40, "position": "bottom", "color": "yellow", "stroke_color": "black", "stroke_width": 3},
+    "bgm_style": "minimal_ambient",
+    "bgm_volume": 0.08,
+    "pacing": "slow",
+    "keep_natural_audio": true,
+    "text_overlay_frequency": "high"
+  }
+}

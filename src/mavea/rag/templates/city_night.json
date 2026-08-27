@@ -1,0 +1,45 @@
+{
+  "name": "城市夜景",
+  "scenario": "nightlife",
+  "description": "都市夜景/赛博氛围，霓虹质感",
+  "target_duration": 20,
+  "structure": [
+    {
+      "segment": "空镜",
+      "duration_ratio": 0.15,
+      "shot_type": "霓虹街景",
+      "description": "霓虹街景"
+    },
+    {
+      "segment": "人物",
+      "duration_ratio": 0.6,
+      "shot_type": "背影/侧脸",
+      "description": "背影/侧脸"
+    },
+    {
+      "segment": "收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "车流延时",
+      "description": "车流延时"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "epic",
+    "bgm_volume": 0.12,
+    "pacing": "slow",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

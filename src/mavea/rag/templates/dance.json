@@ -1,0 +1,44 @@
+{
+  "name": "舞蹈翻跳",
+  "scenario": "dance",
+  "description": "舞蹈展示，动作卡点",
+  "target_duration": 30,
+  "structure": [
+    {
+      "segment": "起势",
+      "duration_ratio": 0.15,
+      "shot_type": "pose",
+      "description": "pose"
+    },
+    {
+      "segment": "主舞",
+      "duration_ratio": 0.6,
+      "shot_type": "全身+特写交替",
+      "description": "全身+特写交替"
+    },
+    {
+      "segment": "ending",
+      "duration_ratio": 0.25,
+      "shot_type": "结束pose",
+      "description": "结束pose"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 1.8,
+    "transition_preference": [
+      "cut"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "upbeat",
+    "bgm_volume": 0.12,
+    "pacing": "fast",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

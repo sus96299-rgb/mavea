@@ -1,0 +1,22 @@
+{
+  "name": "日常Vlog集锦",
+  "scenario": "vlog_highlight",
+  "description": "日常Vlog精彩片段集锦，轻松自然，保留有趣对话和笑声",
+  "target_duration": 60,
+  "structure": [
+    {"segment": "opening", "duration_ratio": 0.1, "shot_type": "最精彩/最有趣的镜头", "description": "用最有趣的片段开头吸引观众"},
+    {"segment": "story", "duration_ratio": 0.6, "shot_type": "按时间线的精彩片段", "description": "保留有趣对话和笑声，节奏有张有弛"},
+    {"segment": "highlight", "duration_ratio": 0.2, "shot_type": "高潮片段", "description": "最精彩的部分放在中后段"},
+    {"segment": "ending", "duration_ratio": 0.1, "shot_type": "收尾镜头", "description": "自然结尾或留白"}
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.5,
+    "transition_preference": ["cut", "fade", "dissolve"],
+    "subtitle_style": {"font_size": 32, "position": "bottom", "color": "white", "stroke_color": "black", "stroke_width": 2},
+    "bgm_style": "lofi_chill",
+    "bgm_volume": 0.1,
+    "pacing": "medium",
+    "keep_natural_audio": true,
+    "text_overlay_frequency": "low"
+  }
+}

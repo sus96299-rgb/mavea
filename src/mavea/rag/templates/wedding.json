@@ -1,0 +1,51 @@
+{
+  "name": "婚礼花絮",
+  "scenario": "wedding",
+  "description": "婚礼浪漫花絮，感人庄重",
+  "target_duration": 90,
+  "structure": [
+    {
+      "segment": "准备",
+      "duration_ratio": 0.12,
+      "shot_type": "新娘/布置",
+      "description": "新娘/布置"
+    },
+    {
+      "segment": "仪式",
+      "duration_ratio": 0.3,
+      "shot_type": "誓言/交换戒指",
+      "description": "誓言/交换戒指"
+    },
+    {
+      "segment": "高潮",
+      "duration_ratio": 0.33,
+      "shot_type": "亲吻/抛花",
+      "description": "亲吻/抛花"
+    },
+    {
+      "segment": "收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "宾客合影",
+      "description": "宾客合影"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "calm",
+    "bgm_volume": 0.12,
+    "pacing": "slow",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

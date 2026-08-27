@@ -1,0 +1,44 @@
+{
+  "name": "健身训练打卡",
+  "scenario": "fitness",
+  "description": "健身/训练记录，力量感强，卡点到鼓点",
+  "target_duration": 30,
+  "structure": [
+    {
+      "segment": "开场",
+      "duration_ratio": 0.15,
+      "shot_type": "蓄力/准备",
+      "description": "蓄力/准备"
+    },
+    {
+      "segment": "训练组",
+      "duration_ratio": 0.6,
+      "shot_type": "动作卡点切换",
+      "description": "动作卡点切换"
+    },
+    {
+      "segment": "成果",
+      "duration_ratio": 0.25,
+      "shot_type": "出汗/对比",
+      "description": "出汗/对比"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 1.8,
+    "transition_preference": [
+      "cut"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "upbeat",
+    "bgm_volume": 0.12,
+    "pacing": "fast",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

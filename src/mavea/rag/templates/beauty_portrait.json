@@ -1,0 +1,45 @@
+{
+  "name": "人像写真/颜值",
+  "scenario": "beauty",
+  "description": "人像写真与情绪片，唯美柔光，浅景深",
+  "target_duration": 20,
+  "structure": [
+    {
+      "segment": "特写",
+      "duration_ratio": 0.15,
+      "shot_type": "眼神/侧脸",
+      "description": "眼神/侧脸"
+    },
+    {
+      "segment": "中景",
+      "duration_ratio": 0.6,
+      "shot_type": "姿态",
+      "description": "姿态"
+    },
+    {
+      "segment": "氛围收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "逆光剪影",
+      "description": "逆光剪影"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "calm",
+    "bgm_volume": 0.12,
+    "pacing": "slow",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

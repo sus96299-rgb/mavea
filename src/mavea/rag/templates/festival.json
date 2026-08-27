@@ -1,0 +1,45 @@
+{
+  "name": "节日祝福",
+  "scenario": "festival",
+  "description": "春节/中秋等节日祝福，喜庆温暖",
+  "target_duration": 20,
+  "structure": [
+    {
+      "segment": "氛围",
+      "duration_ratio": 0.15,
+      "shot_type": "节日元素空镜",
+      "description": "节日元素空镜"
+    },
+    {
+      "segment": "祝福",
+      "duration_ratio": 0.6,
+      "shot_type": "人物祝福语",
+      "description": "人物祝福语"
+    },
+    {
+      "segment": "收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "合家欢",
+      "description": "合家欢"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "upbeat",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

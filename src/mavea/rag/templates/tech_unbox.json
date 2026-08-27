@@ -1,0 +1,51 @@
+{
+  "name": "数码开箱",
+  "scenario": "tech",
+  "description": "3C 数码开箱测评，干净利落",
+  "target_duration": 45,
+  "structure": [
+    {
+      "segment": "钩子",
+      "duration_ratio": 0.12,
+      "shot_type": "包装盒特写",
+      "description": "包装盒特写"
+    },
+    {
+      "segment": "开箱",
+      "duration_ratio": 0.3,
+      "shot_type": "配件展示",
+      "description": "配件展示"
+    },
+    {
+      "segment": "体验",
+      "duration_ratio": 0.33,
+      "shot_type": "上手亮点",
+      "description": "上手亮点"
+    },
+    {
+      "segment": "总结",
+      "duration_ratio": 0.25,
+      "shot_type": "值不值得买",
+      "description": "值不值得买"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "calm",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "medium"
+  }
+}

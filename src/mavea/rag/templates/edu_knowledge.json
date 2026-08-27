@@ -1,0 +1,45 @@
+{
+  "name": "知识科普口播",
+  "scenario": "education",
+  "description": "知识讲解/教程口播，信息清晰",
+  "target_duration": 60,
+  "structure": [
+    {
+      "segment": "提出问题",
+      "duration_ratio": 0.15,
+      "shot_type": "痛点引入",
+      "description": "痛点引入"
+    },
+    {
+      "segment": "分点讲解",
+      "duration_ratio": 0.6,
+      "shot_type": "要点123",
+      "description": "要点123"
+    },
+    {
+      "segment": "总结",
+      "duration_ratio": 0.25,
+      "shot_type": "一句话回顾",
+      "description": "一句话回顾"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "ambient",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": true,
+    "text_overlay_frequency": "medium"
+  }
+}

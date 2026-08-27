@@ -1,0 +1,45 @@
+{
+  "name": "励志鸡汤",
+  "scenario": "motivational",
+  "description": "励志奋斗向，情绪递进",
+  "target_duration": 30,
+  "structure": [
+    {
+      "segment": "低谷",
+      "duration_ratio": 0.15,
+      "shot_type": "暗色/困境",
+      "description": "暗色/困境"
+    },
+    {
+      "segment": "转折",
+      "duration_ratio": 0.6,
+      "shot_type": "努力片段",
+      "description": "努力片段"
+    },
+    {
+      "segment": "点燃",
+      "duration_ratio": 0.25,
+      "shot_type": "高光+金句",
+      "description": "高光+金句"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "epic",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

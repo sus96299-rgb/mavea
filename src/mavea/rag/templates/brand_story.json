@@ -1,0 +1,21 @@
+{
+  "name": "品牌故事",
+  "scenario": "brand_story",
+  "description": "品牌形象宣传，电影感画面，情感叙事，适合官网/发布会",
+  "target_duration": 60,
+  "structure": [
+    {"segment": "vision", "duration_ratio": 0.2, "shot_type": "宏大/唯美的场景", "description": "品牌愿景和价值观引入"},
+    {"segment": "story", "duration_ratio": 0.4, "shot_type": "人物故事/制作过程", "description": "讲述品牌故事或匠人精神"},
+    {"segment": "product", "duration_ratio": 0.25, "shot_type": "产品美学展示", "description": "产品设计和品质"},
+    {"segment": "slogan", "duration_ratio": 0.15, "shot_type": "品牌Logo+Slogan", "description": "品牌记忆点"}
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": ["dissolve", "fade"],
+    "subtitle_style": {"font_size": 42, "position": "center", "color": "white", "stroke_color": "black", "stroke_width": 1},
+    "bgm_style": "cinematic_emotional",
+    "bgm_volume": 0.18,
+    "pacing": "slow",
+    "text_overlay_frequency": "medium"
+  }
+}

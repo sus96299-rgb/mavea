@@ -1,0 +1,45 @@
+{
+  "name": "汽车展示",
+  "scenario": "automotive",
+  "description": "汽车外观内饰与驾驶感，酷炫大气",
+  "target_duration": 30,
+  "structure": [
+    {
+      "segment": "外观",
+      "duration_ratio": 0.15,
+      "shot_type": "环绕车身",
+      "description": "环绕车身"
+    },
+    {
+      "segment": "内饰",
+      "duration_ratio": 0.6,
+      "shot_type": "细节特写",
+      "description": "细节特写"
+    },
+    {
+      "segment": "行驶",
+      "duration_ratio": 0.25,
+      "shot_type": "动态跟拍",
+      "description": "动态跟拍"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "epic",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

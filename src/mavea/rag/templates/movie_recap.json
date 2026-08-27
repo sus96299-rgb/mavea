@@ -1,0 +1,44 @@
+{
+  "name": "影视解说",
+  "scenario": "recap",
+  "description": "影视/剧情解说，信息密度高",
+  "target_duration": 90,
+  "structure": [
+    {
+      "segment": "背景",
+      "duration_ratio": 0.15,
+      "shot_type": "人物关系",
+      "description": "人物关系"
+    },
+    {
+      "segment": "冲突",
+      "duration_ratio": 0.6,
+      "shot_type": "关键剧情",
+      "description": "关键剧情"
+    },
+    {
+      "segment": "高潮/悬念",
+      "duration_ratio": 0.25,
+      "shot_type": "引导关注",
+      "description": "引导关注"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 1.8,
+    "transition_preference": [
+      "cut"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "ambient",
+    "bgm_volume": 0.12,
+    "pacing": "fast",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

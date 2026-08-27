@@ -1,0 +1,44 @@
+{
+  "name": "城市旅行打卡",
+  "scenario": "travel",
+  "description": "城市旅行/地标打卡，节奏明快，突出目的地氛围与美食",
+  "target_duration": 45,
+  "structure": [
+    {
+      "segment": "开场钩子",
+      "duration_ratio": 0.15,
+      "shot_type": "最具冲击力的地标全景",
+      "description": "最具冲击力的地标全景"
+    },
+    {
+      "segment": "行程亮点",
+      "duration_ratio": 0.6,
+      "shot_type": "美食/街景/地标快切",
+      "description": "美食/街景/地标快切"
+    },
+    {
+      "segment": "收尾",
+      "duration_ratio": 0.25,
+      "shot_type": "定格+地点文字",
+      "description": "定格+地点文字"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 1.8,
+    "transition_preference": [
+      "cut"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "upbeat",
+    "bgm_volume": 0.12,
+    "pacing": "fast",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "旅行 Vlog 长片",
+  "scenario": "vlog",
+  "description": "多日旅行完整记录，有叙事",
+  "target_duration": 120,
+  "structure": [
+    {
+      "segment": "出发",
+      "duration_ratio": 0.15,
+      "shot_type": "路途",
+      "description": "路途"
+    },
+    {
+      "segment": "Day1-N",
+      "duration_ratio": 0.6,
+      "shot_type": "每日亮点",
+      "description": "每日亮点"
+    },
+    {
+      "segment": "结尾",
+      "duration_ratio": 0.25,
+      "shot_type": "感悟+地点",
+      "description": "感悟+地点"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 3.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "calm",
+    "bgm_volume": 0.12,
+    "pacing": "medium",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "乡村田园",
+  "scenario": "countryside",
+  "description": "乡村田园慢生活，治愈",
+  "target_duration": 60,
+  "structure": [
+    {
+      "segment": "清晨",
+      "duration_ratio": 0.15,
+      "shot_type": "炊烟/田野",
+      "description": "炊烟/田野"
+    },
+    {
+      "segment": "劳作",
+      "duration_ratio": 0.6,
+      "shot_type": "日常片段",
+      "description": "日常片段"
+    },
+    {
+      "segment": "黄昏",
+      "duration_ratio": 0.25,
+      "shot_type": "归家",
+      "description": "归家"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 4.0,
+    "transition_preference": [
+      "cut",
+      "fade"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "calm",
+    "bgm_volume": 0.12,
+    "pacing": "slow",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}

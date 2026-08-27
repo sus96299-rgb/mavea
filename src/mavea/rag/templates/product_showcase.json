@@ -1,0 +1,21 @@
+{
+  "name": "产品展示",
+  "scenario": "ecommerce_promo",
+  "description": "纯产品展示，多角度特写+参数标注，适合详情页视频",
+  "target_duration": 20,
+  "structure": [
+    {"segment": "hero", "duration_ratio": 0.2, "shot_type": "产品全貌", "description": "产品整体亮相"},
+    {"segment": "features", "duration_ratio": 0.5, "shot_type": "各卖点特写", "description": "逐个展示核心卖点，配文字标注"},
+    {"segment": "demo", "duration_ratio": 0.2, "shot_type": "使用演示", "description": "简单演示使用方法"},
+    {"segment": "brand", "duration_ratio": 0.1, "shot_type": "品牌+型号", "description": "品牌信息收尾"}
+  ],
+  "editing_params": {
+    "avg_shot_duration": 2.0,
+    "transition_preference": ["cut", "zoom"],
+    "subtitle_style": {"font_size": 44, "position": "top", "color": "yellow", "stroke_color": "black", "stroke_width": 2},
+    "bgm_style": "corporate_tech",
+    "bgm_volume": 0.1,
+    "pacing": "medium",
+    "text_overlay_frequency": "high"
+  }
+}

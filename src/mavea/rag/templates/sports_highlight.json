@@ -1,0 +1,44 @@
+{
+  "name": "运动高燃集锦",
+  "scenario": "sports",
+  "description": "篮球/跑步等运动高燃集锦，强卡点",
+  "target_duration": 30,
+  "structure": [
+    {
+      "segment": "蓄力",
+      "duration_ratio": 0.15,
+      "shot_type": "准备动作",
+      "description": "准备动作"
+    },
+    {
+      "segment": "爆发",
+      "duration_ratio": 0.6,
+      "shot_type": "进球/冲刺慢镜",
+      "description": "进球/冲刺慢镜"
+    },
+    {
+      "segment": "庆祝",
+      "duration_ratio": 0.25,
+      "shot_type": "呐喊",
+      "description": "呐喊"
+    }
+  ],
+  "editing_params": {
+    "avg_shot_duration": 1.8,
+    "transition_preference": [
+      "cut"
+    ],
+    "subtitle_style": {
+      "font_size": 32,
+      "position": "bottom",
+      "color": "white",
+      "stroke_color": "black",
+      "stroke_width": 2
+    },
+    "bgm_style": "upbeat",
+    "bgm_volume": 0.12,
+    "pacing": "fast",
+    "keep_natural_audio": false,
+    "text_overlay_frequency": "low"
+  }
+}
